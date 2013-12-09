@@ -3,7 +3,7 @@
 		<a href="index.php?content=homepage">Home</a>
 	</li>
 	<li>
-		<a href="index.php?content=MySqlDatabaseClass">db test</a>
+		<a href="index.php?content=class/logintest">login test</a>
 	</li>
 	<?php if (isset($_SESSION['userrole']))
 	{

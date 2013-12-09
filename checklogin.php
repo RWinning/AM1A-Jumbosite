@@ -1,18 +1,22 @@
 <?php
+
+//als je een methode uit de loginclass wilt gebruiken dan moet je require_once genruiken.
+require_once ("class/LoginClass.php");
+
  //check of beide velden zijn ingevoerd
  if ( !empty($_POST['email']) && !empty($_POST['password']))
  {
-  include ('./connect_db.php');
-  $query = "SELECT * FROM `users` WHERE `email` = '".$_POST['email']."'
-  AND `password` = '".$_POST['password']."'";
-  
-  //echo $query;
-  //Vuur de query af op de database
-  $result = mysql_query($query, $db);
+  if(LoginClass::check_if_email_password_exist($_POST['email,'], $_POST['password']))
+  {
+  	
+  }
   if (mysql_num_rows($result) > 0)
   {
    //verwijs door naar de homepage van degeregisteerde gebruiker
    //echo "Record bestaat in de database";
+   //echo "De combinatie bestaat niet"; exit();
+   $user_object = LoginClass::find_user_by_email_password($_POST['email'], $_POST['password']);
+   
    $record = mysql_fetch_array($result);
    $_SESSION['id'] = $record['id'];
    $_SESSION['userrole'] = $record['userrole'];
