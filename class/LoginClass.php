@@ -116,8 +116,7 @@
   {
   	$query = "SELECT * FROM login' WHERE 'email' = '' AND 'password' = ''";
 	$LoginClassObjectArray = self::find_by_sql($query);
-	$LoginClassObject - array_shift($LoginClassObjectArray);
-	return $LoginClassObject();
+	return $LoginClassObject = array_shift($LoginClassObjectArray);
   }
  }
 ?>
