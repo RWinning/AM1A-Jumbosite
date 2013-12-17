@@ -15,8 +15,8 @@
                         // Velden roep je aan met $this->naam_van_het_veld_zonder_$
                         // Er wordt hier een verbinding gemaakt met de mysql-server                                
                         $this->db_connection = mysql_connect(SERVERNAME,
-                                                             USERNAME,
-  															 PASSWORD);
+                                                                                                 USERNAME,
+                                                                                                 PASSWORD);
                         // Er wordt hier een database geselecteerd                                                                 
                         mysql_select_db(DATABASE, $this->db_connection) or 
                                 die('MySqlDatabaseClass, database niet geselecteerd');
@@ -35,3 +35,4 @@
         // Maak nu een instantie van de net gedefinieerde class.
         $database = new MySqlDatabaseClass();
 ?>
+

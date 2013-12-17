@@ -6,7 +6,7 @@ Dit is de login in test</h3><hr>
 
 	$loginClassObj = new LoginClass();
 	
-	$query = "SELECT * FROM `login`";
+	$query = "SELECT * FROM `login1`";
 	
 	//method find_by_sql($query) static gemaakt. Dit heeft ale gevolg dat we de method kunnen aanroepen zonder eerst een object te hoeven maken van de LoginClass. we kunnen een method simpel aanroepen
 	$result_array = LoginClass::find_by_sql($query);
