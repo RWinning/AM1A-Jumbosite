@@ -1,35 +1,38 @@
-Dit is de login in test</h3><hr>
-
+<h3>Dit is de logintest pagina</h3><hr>
 <?php
-	//include de LoginClass
-	require_once ('class/LoginClass.php');
+	// Include de LoginClass
+	require_once('class/LoginClass.php');
+	
+	/* We hebben de method find_by_sql($query) static gemaakt. Dit heeft als
+	 * dat we deze method kunnen aanroepen zonder eerst een object te hoeven
+	 * maken van de class LoginClass. We kunnen de method simpel aanroepen door
+	 * de classnaam gevolgd door een dubbele dubbele punt :: (double colon) dus
+	 * LoginClass::find_by_sql($query)
+	 */
+	$result_array = LoginClass::select_all_from_login();
 
-	$loginClassObj = new LoginClass();
-	
-	$query = "SELECT * FROM `login1`";
-	
-	//method find_by_sql($query) static gemaakt. Dit heeft ale gevolg dat we de method kunnen aanroepen zonder eerst een object te hoeven maken van de LoginClass. we kunnen een method simpel aanroepen
-	$result_array = LoginClass::find_by_sql($query);
-	
 	echo "<table>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			</tr>";
-	foreach ( $result_array as $value )
+			  <tr>
+			  	<th>id</th>
+			  	<th>email</th>
+			  	<th>wachtwoord</th>
+			  	<th>gebruikersrol</th>
+			  	<th>geactiveerd</th>
+			  	<th>activatiedatum</th>
+			  </tr>";
+	foreach ( $result_array as $value)
 	{
+			
 		echo "<tr>
-					<td>" .$value->get_id()."</td>
-		<td>" .$value->get_email()."</td>
-		<td>" .$value->get_password()."</td>
-		<td>" .$value->get_userrole()."</td>
-		<td>" .$value->get_activated()."</td>
-		<td>" .$value->get_activationdate()."</td></tr>";
+				<td>".$value->get_id()."</td>
+				<td>".$value->get_email()."</td>
+				<td>".$value->get_password()."</td>
+				<td>".$value->get_userrole()."</td>
+				<td>".$value->get_activated()."</td>
+				<td>".$value->get_activationdate()."</td>
+			  </tr>";
 	}
-
+	echo "</table>";
 ?>
-
-
+Bestaat het e-mailadres developer123@gmail.com?<br>
+<?php echo LoginClass::email_exists("developer123@gmail.com"); ?>

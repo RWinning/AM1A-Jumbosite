@@ -1,30 +1,32 @@
-<table class="simple">
-	<caption>download</caption>
+<table class='simple'>
+	<caption>Downloads</caption>
 	<tr>
-		<th>Screenshot</th>
-		<th>Spelnaam</th>
-		<th>Download game</th>
-		<th>Download manual</th>
+		<th>screenshot</th>
+		<th>spelnaam</th>
+		<th>download game</th>
+		<th>download manual</th>	
 	</tr>
 	<tr>
 		<td>
-			<img src ='./images/screenshot.png' alt='printscreen game' width='200' />
+			<img src='./images/prtscGame.png' 
+				 alt='printscreen game'
+				 width='200' />
 		</td>
 		<td>
-			Empty_Space
+			EvilBabies
 		</td>
-	<td>
-	<a href='./downloads/empty_space.rar'>
-			<img src='./images/download_knop.png' alt='download game' />
-		</a>
-	</td>
-	<td>
-		<a href='./downloads/Handleiding.doc'>
-			<img src='./images/vlag_NL.png' alt='download handleiding nl' width='75' height='75' />
-		</a>
-		<a href='./downloads/Manual.doc'>
-			<img src='./images/vlag_EN.png' alt='download handleiding ENG' width='70' height='70' />
-		</a>
-	</td>	
+		<td>
+			<a href='./downloads/EvilBabies.zip'>
+				<img src='./images/download.png' alt='download game' />
+			</a>
+		</td>
+		<td>
+			<a href='./downloads/HandleidingNed.doc'>
+				<img src='./images/ned_vlag.png' alt='download manual ned' />
+			</a>
+			<a href='./downloads/ManualEng.doc'>
+				<img src='./images/eng_vlag.png' alt='download manual eng' />
+			</a>
+		</td>
 	</tr>
 </table>

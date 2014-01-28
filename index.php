@@ -3,28 +3,23 @@
 <html>
 	<head>
 		<title>
-			Jumbo Spellen
+			Mijn eerste site
 		</title>
-		<link rel = 'stylesheet' type = 'text/css' href = './css/style.css' />
+		<link rel='stylesheet' type='text/css' href='./css/style.css'/>
 	</head>
-	
-		<body>
-			<div id='container'>
-				<div id='banner'>
-				</div>
-				
-				<div id='content'>
-					<div id='link'>
-						<?php include ("link.php"); ?>
-					</div>
-						<?php include ("navigation.php"); ?>
-				</div>
-				
-				<div id='footer'>
-					Contact | Disclaimer | Copyright | Tools | Privacy | Advertisement
-				
-				</div>
+	<body >
+		<div id='container'>
+			<div id='banner'>		
 			</div>
-		</body>		
-		
+			<div id='content'>
+				<div id='link'>
+					<?php include("link.php"); ?>
+				</div>
+				<?php include("navigation.php"); ?>			
+			</div>
+			<div id='footer'>			
+				contact | disclaimer | copyright | tools | privacy | advertisement
+			</div>
+		</div>
+	</body>
 </html>

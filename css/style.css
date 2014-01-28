@@ -1,102 +1,89 @@
 *
 {
- padding: 0px;
- margin: 0px;
+	padding:0px;
+	margin:0px;
 }
-
 
 body
 {
- background-color:Yellow;
- color:black;
- font-size:1.0em;
- font-family:Comic Sans MS, Arial;
- border:0px Solid darkblue;
- padding:1.5em;
- margin:0px;
+	background-color:RGB(220, 220, 220);
+	color:RGBA(255, 255, 255, 1);
+	font-size:1.1em;
+	font-family:Comic Sans MS, Arial;
+	border:0px solid green;
+	padding:1em;
+	margin:10px;
 }
 
 div#container
 {
- background-color:white; 
- width:830px;
- margin:0px auto;
- border-radius:25px;
- 
+	background-color:grey;
+	width:745px;
+	margin:0px auto;
+	border-radius:25px;
 }
 
 div#banner
 {
- background-image:url("../images/jumbo.jpg");
- background-repeat:no-repeat;
- background-color:red;
- height:200px;
- border-radius:25px;
- border-top:15px solid white;
- border-left: 15px solid white;
- border-right: 15px solid white;
+	background-image:url("../images/fotojaak-banner.png");
+	background-repeat:no-repeat;
+	background-color:orange;
+	height:170px;
+	border-radius:25px;
 }
 
 div#footer
 {
- background-color:red;
- text-align:Left;
- border:3px solid white;
- border-radius:15px;
- text-align:center;
- 
+	background-color:orange;
+	text-align:center;
 }
 
 div#content
 {
- min-height:250px;
- border:25px Solid white;
- text-align:Left;
- position: relative;
- text-align:center;
+	min-height:300px;
+	border:0px solid white;
+	padding:10px;
+	position:relative;
 }
 
-div#link
+div#link 
 {
- border:5px Solid red;
- position: absolute;
- left:-130px;
- background-color: red;
- border-radius: 15px;
- padding: 0.5em;
+	border:3px solid white;
+	position:absolute;
+	left:-120px;
+	background-color:grey;
+	border-radius:20px;
+	padding:0.5em;
 }
 
 div#link ul
 {
- list-style-type:none; 
+	list-style-type:none;
 }
 
 a
 {
- color: White;
- text-decoration: none;
+	color:white;
+	text-decoration:none;
 }
 
-table.simple
+table.simple 
 {
- border-collapse:colepse;
- margin: 0px auto;
+	border-collapse:collapse;
+	margin:0px auto;	
 }
 
-table.simple th, td
+table.simple  th, td
 {
- border:1px solid red;
- text-align:center;
- padding: 0,3em;
- background-color:white;
- color:red;
- margin:0px auto;
+	border:1px solid white;
+	text-align:center;
+	padding:0.3em;
+	background-color:RGB(180,180,180);
+	color:black;
 }
 
 table.simple caption
 {
- background-color: red;
+	background-color:orange;
 }
 
-
-	
