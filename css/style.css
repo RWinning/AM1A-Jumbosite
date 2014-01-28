@@ -18,17 +18,17 @@ body
 div#container
 {
 	background-color:grey;
-	width:745px;
+	width:500px;
 	margin:0px auto;
 	border-radius:25px;
 }
 
 div#banner
 {
-	background-image:url("../images/fotojaak-banner.png");
+	background-image:url("../images/nikon-banner.jpg");
 	background-repeat:no-repeat;
 	background-color:orange;
-	height:170px;
+	height:150px;
 	border-radius:25px;
 }
 
